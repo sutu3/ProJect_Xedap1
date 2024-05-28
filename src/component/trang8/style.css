@@ -1,0 +1,130 @@
+.trang8 {
+  transform: translate(0, 20%);
+  border-radius: 5px;
+  background-color: #010824;
+  color: white;
+  width: min(1500px, 100%);
+  background: radial-gradient(circle at -40% 50%, #d8f3ff 20%, #aee5ff 30%, #8ed0f7 40%, #57c1ff 50%, #1a76c7 60%, #1a76c7 70%, #144e94 80%, #144e94 90%);
+  background-size: 100% 100%;
+}
+.trang8 h1 {
+  font-size: 100px;
+  font-weight: lighter;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.trang8 p {
+  text-align: center;
+  font-size: x-large;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.trang8 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.trang8 ul li {
+  padding: 10px;
+  transition: 0.5s;
+  list-style: none;
+  font-size: larger;
+}
+.trang8 ul li:hover {
+  color: gray;
+}
+.trang8 .info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.trang8 .info::after {
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 350px;
+  box-shadow: 1px 1px 20px 2px gray;
+  display: block;
+  background-image: url("https://images.wallpaperscraft.com/image/single/bicycle_forest_trees_271950_1280x720.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(20%, -130%);
+  border-radius: 0px 0px 200px 0px;
+}
+.trang8 .info::before {
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 350px;
+  box-shadow: 1px 1px 20px 2px gray;
+  display: block;
+  background-image: url("https://images.wallpaperscraft.com/image/single/bicycles_gazebo_parking_125609_1280x720.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(300%, -100%);
+  border-radius: 200px 0px 0px 0px;
+}
+.trang8 .info .it:nth-child(1) {
+  margin: 10px;
+  color: gray;
+  font-size: larger;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.trang8 .info .it:nth-child(2) {
+  margin: 10px;
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  width: 150px;
+}
+.trang8 .info .it:nth-child(2):hover {
+  background-color: #d8f3ff;
+  color: #144e94;
+  text-align: center;
+  border-radius: 10px;
+}
+.trang8 .info .it:nth-child(3) {
+  margin: 10px;
+  font-size: small;
+  font-weight: thin;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .trang8 {
+    transform: translate(0, 320%);
+  }
+  .trang8 h1 {
+    font-size: 50px;
+  }
+  .trang8 ul {
+    flex-wrap: wrap;
+  }
+  .trang8 .info::after {
+    transform: translate(0%, -300%);
+    width: 150px;
+    height: 150px;
+    border-radius: 0px 0px 200px 0px;
+  }
+  .trang8 .info::before {
+    transform: translate(160%, -340%);
+    width: 150px;
+    height: 150px;
+    border-radius: 0px 0px 0px 200px;
+  }
+  .trang8 .info .it:nth-child(1) {
+    font-size: small;
+  }
+}/*# sourceMappingURL=style.css.map */

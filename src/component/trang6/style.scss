@@ -1,0 +1,80 @@
+.trang6{
+        width: min(1500px,100%);
+        height: max-content;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('https://images.wallpaperscraft.com/image/single/bicycle_seat_evening_115668_1280x720.jpg');
+        .it1{
+            height: 300px;
+            width: 100%;
+            justify-content: left;
+            align-items: end;
+            display: flex;
+            margin-left: 20px;
+            font-size: 50px;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            font-weight: bolder;
+            color: white;
+            margin-bottom: 50px;
+        }
+        .it2{
+            background-image: linear-gradient( to bottom ,transparent,rgb(0, 0, 0),black ,black );
+            padding-bottom: 100px;
+            .list{
+                display: grid;
+                color: white;
+                width: 90%;
+                grid-template-columns: 33% 33% 33%;
+                grid-area: 20px;
+                margin: auto;
+                .txt{
+                    width: 65%;
+                    margin: auto;
+                    text-align: justify;
+                    h3{
+                        font-size: 30px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .it3{
+                width: 100%;
+                height: 500px;
+                color: white;
+                img{
+                    border-radius: 20px;
+                    width: 15%;
+                    left: 50%;
+                    transform: translate(600px,10%);
+
+                }
+                .about{
+                    text-align: center;
+                    font-size: 50px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: bolder;
+                }
+                .txt{
+                    width: 70%;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+     @media screen and (min-width:300px) and (max-width:600px){
+        .trang6{
+            transform: translate(0,100%);
+            .it2{
+                .list{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+     }

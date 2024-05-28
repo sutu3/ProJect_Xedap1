@@ -1,0 +1,169 @@
+.trang3{
+        position: relative;
+        &::after{
+            
+            top: -20%;
+            left: 00%;
+            display: block;
+            width: 400px;
+            height: 400px;
+            content: '';
+            position: absolute;
+            background-image: url('https://images.wallpaperscraft.com/image/single/cyclist_legs_bicycle_113856_1280x720.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(4px);
+            border-radius: 00px 200px 0px 0px;
+        }
+        &::before{
+            
+            top: 130%;
+            left: 60%;
+            display: block;
+            width: 500px;
+            height: 500px;
+            content: '';
+            position: absolute;
+            background-image: url('https://cdn.dribbble.com/users/2100365/screenshots/17965974/media/05f81f5ee8fc680d6d94b26b73fb388b.jpg?resize=1000x750&vertical=center');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(2px);
+        }
+        width: min(1500px,100%);
+        .title{
+            margin: 50px;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+            color: rgb(182, 181, 181);
+            text-transform: uppercase;
+        }
+        .list{
+            width: 70%;
+            height: 600px;
+            margin: auto;
+            ul{
+                z-index: 9;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+                li{
+                    transition: 0.5s;
+                    width: 400px;
+                    height: 300px;
+                    &:hover{
+                        &::after{
+                            z-index: -9;
+                        }
+                        transform: translate(0%,-2%);
+                        box-shadow: 0px 5px 15px 1px gray;
+                    }
+                    box-shadow: 0px 0px 10px 0px gray;
+                    z-index: 10;
+                    border-radius: 20px;
+                    gap: 10px;
+                    background-color: rgb(199, 196, 196);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    backdrop-filter: blur(20px);
+                    img{
+                        transform: translate(60%,0%);
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 10px;
+            }
+            p{
+                color: gray;
+            }
+            display: grid;
+            grid-template-columns: 40% 60%;
+            position: relative;
+            &::after{
+                transition: 1s;
+                content: '';
+                z-index: -12;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                border-radius: 10px;
+                background: linear-gradient(160deg, #F05941, #f3c361, rgb(247, 243, 243), rgb(247, 243, 243), #BEFFF7, #6499E9);
+                width: 100%;
+
+            }
+            &::before{
+                content: '';
+                z-index: -11;
+                position: absolute;
+                left:1%;
+                top: 2%;
+                height: 96%;
+                border-radius: 10px;
+                background-color: rgb(247, 243, 243);
+                width: 98%;
+            }
+                }
+            }
+            .txt{
+                width: 80%;
+                text-align: justify;
+            }
+        }
+    }
+    @media screen and (min-width:300px) and (max-width:600px){
+        .trang3{
+            transform: translate(0%,20%);
+            &::after{
+                top: 20%;
+                left: 10%;
+                z-index: -1;
+                border-radius: 0;
+            }
+            &::before{
+                left: 10%;
+                z-index: -1;
+                border-radius: 0;
+            }
+            .list{
+                ul{
+                    li{
+                        height: 300px;
+                        grid-template-columns: 100%;
+                        img{
+                            
+                            z-index: -1;
+                            top: 50%;
+                            left: 50%;
+                            position: absolute;
+                            transform: translate(-50%,-50%);
+                        }
+                        .txt{
+                            width: 100%;
+                            h3{
+                                width: 70%;
+                                text-align: left;
+                                margin-left: 20px;
+                            }
+                            p{
+                                width: 70%;
+                                text-align: justify;
+                                margin: auto;
+                            }
+                        }
+                        position: relative;
+                        &:nth-child(odd)
+                        {
+                            transform: translate(-30%,0%);
+                        }
+                        &:nth-child(even)
+                        {
+                            transform: translate(20%,0%);
+                        }
+                    }
+                }
+            }
+        }
+    }

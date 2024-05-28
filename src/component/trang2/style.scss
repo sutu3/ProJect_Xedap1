@@ -1,0 +1,98 @@
+.trang2{
+        width: 100%;
+        margin-top: 20px;
+        width: min(1500px,100%);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 600px;
+        .txt{
+            width: 450px;
+            margin: auto;
+            h2{
+                font-size: 40px;
+                text-transform: uppercase;
+                font-weight: bolder;
+                color: gray;
+            }
+            p{
+                
+                color: gray;
+                transform: translate(5%,0%);
+                position: relative;
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 10px;
+                    height: 100%;
+                    background-color: aqua;
+                    top: 0%;
+                    left: -5%;
+                    border-radius: 4px;
+                }
+            }
+        }
+        .img{
+                width: 100%;
+                background-image: url('https://cdn.tgdd.vn/Files/2021/08/02/1372578/huong-dan-tap-luyen-xe-dap-leo-nui-cho-nguoi-mo-4.jpg');
+                background-position: center center;
+                background-size: 750px center;
+                background-repeat: no-repeat;
+                position: relative;
+                border-radius: 200px;
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('https://t3.ftcdn.net/jpg/05/05/44/58/360_F_505445874_6ZNtCRe7WoogoBDnt77bhkzqB7HRGkoM.jpg');
+                    background-size: contain;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    mix-blend-mode: screen;
+                    border-radius: 200px;
+                }
+        }
+    }
+    @media screen and (min-width:300px) and (max-width:600px) {
+        .trang2{
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            gap: 20px;
+            .txt{
+                order: 2;
+                transform: translate(-5%,0%);
+                h2{
+                    font-size: 20px;
+                    text-align: center;
+                    width: 60%;
+                    margin: auto;
+                }
+                p{
+                    width: 60%;
+                    margin: auto;
+                    text-align: justify;
+                    margin-top: 20px;
+                    
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+            .img{
+                order: 1;
+                width: 60%;
+                margin: auto;
+                height: 100%;
+                background-size: center center;
+                border-radius: 100px;
+                &::before{
+                    width: 100%;
+                    border-radius: 0px;
+                    background-size:cover;
+                }
+            }
+        }
+    }

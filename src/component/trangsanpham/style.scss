@@ -1,0 +1,49 @@
+.transanpham{
+    width: 100%;
+    .list1{
+        margin-top: 100px;
+        height: 500px;
+        ul{
+            width: 100%;
+            position: fixed;
+            span{
+                border-bottom: 2px solid gray;
+                width: 100%;
+                margin: 20px;
+                color: gray;
+            }
+            li{margin-left: 10px;
+                padding: 10x;
+                font-size: larger;
+                margin: 10px;
+            }
+        }
+    }
+    .list2{
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 600px){
+    .transanpham{
+        width: 100%;
+        grid-template-columns: 100% !important;
+        grid-template-rows: 450px 80%;
+        .list1{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        .list2{
+            ul{
+                width: 50%;
+                margin: auto;
+                li{
+                    border: 2px solid black;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

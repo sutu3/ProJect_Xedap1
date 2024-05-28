@@ -1,0 +1,83 @@
+.trang1{
+        &::after{
+            display: block;
+            position: absolute;
+            content: '';
+            background-image: url('https://cdn.dribbble.com/userupload/11672384/file/original-32af2ac3e7319c6880b2e6ee74f387b5.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 200px;
+            height: 200px;
+            top: 80%;
+            left: -2%;
+            object-fit: cover;
+            border-radius: 100px;
+            outline-style: solid;
+            outline-color: white;
+            outline-width: 12px;
+        }
+        position: relative;
+        transform: translateY(-10%);
+        border-radius: 0px 0px 200px 0px;
+        background-image: url('https://images2.giant-bicycles.com/b_white%2Cc_fill%2Ch_1000%2Cq_95%2Cw_1920/mf3kspuuv5jbkyccwexy/web-banner_1920x1080px_2.jpg');
+        width: min(1500px,100%);
+        height: 600px;
+        background-size: cover;
+        background-position: 1px center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 0;
+        .txt{
+            top: 30%;
+            left: 5%;
+            display: grid;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            grid-template-rows: auto auto;
+            p{
+                font-size: 50px;
+                font-weight: bolder;
+                color: white;
+            }
+            .button{
+                height: 50px;
+                z-index: 2;
+                width: 150px;
+                background-color:hsl(161,99%,34%) ;
+                border: 0px;
+                border-radius: 10px;
+                margin: auto;
+                font-size: x-large;
+                color: rgb(90, 89, 89);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    font-weight: bold;
+                transition: 0.2s;
+                &:hover{
+                    color: hsl(161,99%,34%);
+                    background-color:white;
+                    transform: translate(0,-2%);
+                }
+            }
+        }
+    }
+    @media screen and (min-width:300px) and (max-width:600px){
+        .trang1{
+            width: 100%;
+            &::after{
+                width: 100px;
+                height: 100px;
+                transform: translateY(30%);
+            }
+            border-radius: 0px;
+            width: 100%;
+            background-size: cover;
+            .txt{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }

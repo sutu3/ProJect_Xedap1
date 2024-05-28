@@ -1,0 +1,116 @@
+.Nav {
+  color: gray;
+  position: sticky;
+  width: 100%;
+  margin: auto;
+  height: 60px;
+  border-radius: 20px;
+  top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.Nav .image {
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.Nav .image img {
+  width: 100%;
+  height: 100%;
+}
+.Nav .img {
+  height: 50px;
+  background-image: url("https://cdn.dribbble.com/userupload/10318395/file/original-414859762e0ddc2b83397d7c649c5c5f.jpg?crop=896x1112-1489x1558&resize=400x300&vertical=center");
+  width: 50px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  transform: translate(50%, 0%);
+}
+.Nav ul {
+  list-style: none;
+  gap: 10px;
+}
+.Nav ul li {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+  color: gray;
+}
+.Nav ul li:hover {
+  color: rgb(192, 245, 165);
+}
+.Nav ul li input {
+  padding-left: 20px;
+  height: 30px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .Nav {
+    transform: translate(0px, 20px);
+    position: sticky;
+  }
+  .Nav .image {
+    position: relative;
+  }
+  .Nav .image img {
+    border-radius: 10px;
+  }
+  .Nav .image .list {
+    border-radius: 10px;
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    top: 0%;
+    left: -180px;
+    flex-direction: row;
+    background-color: aliceblue;
+  }
+  .Nav .image .list ul {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    border-radius: 10px;
+    height: 100%;
+    gap: 10px;
+  }
+  .Nav .image .list ul a {
+    text-decoration: none;
+  }
+  .Nav .image .list ul a li {
+    height: 50px;
+  }
+  .Nav .image .list ul li input {
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .Nav .image .list ul li button {
+    border: 0px;
+    text-transform: uppercase;
+    font-size: large;
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  .Nav .image .list ul li button:active {
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=style.css.map */
